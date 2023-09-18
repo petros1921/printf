@@ -1,4 +1,4 @@
-This is a printf project which is going to be done in teams of 2 people:
+This is a printf project which is done in teams of 2 people:
 * Kidus Yohannes Asfaw
 * Petros Worku
 
@@ -48,22 +48,22 @@ The custom printf will be tested with different format strings, data types, edge
 
 Example test cases:
 
-Test with integers, floats, characters, strings.
-Test width, precision, padding.
-Test invalid placeholders.
-Test missing arguments.
-Check output matches standard printf.
+* Test with integers, floats, characters, strings.
+* Test width, precision, padding.
+* Test invalid placeholders.
+* Test missing arguments.
+* Check output matches standard printf.
 
 
 
 TODO
- Parse format string
- Implement variable arguments
- Handle integers
- Handle strings
- Handle modifiers
- Manage memory
- Write tests
- Implement error handling
- Optimize performance
+ - Parse format string
+ - Implement variable arguments
+ - Handle integers
+ - Handle strings
+ - Handle modifiers
+ - Manage memory
+ - Write tests
+ - Implement error handling
+ - Optimize performance
 
