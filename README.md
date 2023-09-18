@@ -1,6 +1,6 @@
 This is a printf project which is done in teams of 2 people:
 * Kidus Yohannes Asfaw
-* Petros Worku
+* Petros Worku Legesse
 
 	# Custom Printf
 
