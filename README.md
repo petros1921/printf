@@ -10,23 +10,23 @@ This project involves creating a custom version of the printf function in C.
 
 The printf function is used for formatted printing in C. It allows printing data with special formatting like decimals, strings, characters etc.
 
-The goal of this project is to recreate this functionality by implementing a custom printf function. 
+The goal of this project is to recreate this functionality by implementing a custom printf function.
 
 Key aspects:
 
 - Parse the format string to identify placeholders like %d, %c, %s etc.
 
-- Handle variable number of arguments using va_list, va_start and va_arg. 
+- Handle variable number of arguments using va_list, va_start and va_arg.
 
 - Match the placeholders to the correct argument type.
 
-- Format the arguments according to the placeholders. 
+- Format the arguments according to the placeholders.
 
 - Handle flags, width, precision, length modifiers.
 
 - Output the formatted result to stdout.
 
-- Manage memory dynamically if needed. 
+- Manage memory dynamically if needed.
 
 - Handle errors for invalid format strings.
 

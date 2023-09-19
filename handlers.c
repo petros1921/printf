@@ -136,7 +136,8 @@ int write_num(int ind, char buffer[],
 	}
 	if (extra_c)
 		buffer[--ind] = extra_c;
-return (write(1, &buffer[ind], length));
+return (write(1, &buffer[ind],
+		length));
 }
 
 /**
@@ -184,7 +185,7 @@ int write_unsgnd(int is_negative, int ind,
 
 		buffer[i] = '\0';
 
-		if(flags & F_MINUS)
+		if (flags & F_MINUS)
 		/* Asign extra character to left of buffer [buffer>padd]*/
 		{
 return (write(1, &buffer[ind], length) + write(1, &buffer[0], i));
@@ -196,7 +197,7 @@ return (write(1, &buffer[ind], length) + write(1, &buffer[0], i));
 		}
 	}
 
-return(write(1, &buffer[ind], length));
+	return (write(1, &buffer[ind], length));
 }
 
 /**
