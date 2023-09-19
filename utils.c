@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * is_printable - Evaluates if a char is printable
+ * is_printable - Printable Character eill be evaluated
  * by petros and kidus
- * @c: Char to be evaluated.
- *
- * Return: 1 if c is printable, 0 otherwise
+ * @c: The char which will be evaluated
+ * Return: For success print 1 and 0 if not
  */
 int is_printable(char c)
 {
@@ -16,10 +15,10 @@ int is_printable(char c)
 }
 
 /**
- * append_hexa_code - Append ascci in hexadecimal code to buffer
- * @buffer: Array of chars.
- * @i: Index at which to start appending.
- * @ascii_code: ASSCI CODE.
+ * append_hexa_code - Hexadecimal code to buffer ASSCI
+ * @buffer: Character Araye
+ * @i: Appendeing starter Index
+ * @ascii_code: ASSCI CODE
  * Return: Always 3
  */
 int append_hexa_code(char ascii_code, char buffer[], int i)
@@ -39,10 +38,9 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
 }
 
 /**
- * is_digit - Verifies if a char is a digit
- * @c: Char to be evaluated
- *
- * Return: 1 if c is a digit, 0 otherwise
+ * is_digit - Digit Verifier
+ * @c: Evaluated character
+ * Return: Digit : 1 Otherwise (0)
  */
 int is_digit(char c)
 {
@@ -53,11 +51,10 @@ int is_digit(char c)
 }
 
 /**
- * convert_size_number - Casts a number to the specified size
- * @num: Number to be casted.
- * @size: Number indicating the type to be casted.
- *
- * Return: Casted value of num
+ * convert_size_number - Number to a specified size
+ * @num: Given number to be cated
+ * @size: A number which indicatet size of the number
+ * Return: Value of cated Number
  */
 long int convert_size_number(long int num, int size)
 {
@@ -70,11 +67,10 @@ long int convert_size_number(long int num, int size)
 }
 
 /**
- * convert_size_unsgnd - Casts a number to the specified size
- * @num: Number to be casted
- * @size: Number indicating the type to be casted
- *
- * Return: Casted value of num
+ * convert_size_unsgnd - Castes a Number to a specified number
+ * @num: The number which will be casted
+ * @size: indicator of the type to be casted
+ * Return: Value of num
  */
 long int convert_size_unsgnd(unsigned long int num, int size)
 {
