@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * handle_print - Prints an argument based on its type
- * 
+ *
  * This function prints an argument passed to printf by handling
  * different data types like integers, characters, strings etc.
  * It formats the output according to the given format specifier.

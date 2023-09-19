@@ -125,7 +125,8 @@ int write_num(int ind, char buffer[],
 				buffer[--ind] = extra_c;
 			return (write(1, &buffer[1], i - 1) + write(1, &buffer[ind], length));
 		}
-		else if (!(flags & F_MINUS) && padd == '0')/* Extra character to left of padd */
+		else if (!(flags & F_MINUS) && padd == '0')
+			/* Extra character to left of padd */
 		{
 			if (extra_c)
 				buffer[--padd_start] = extra_c;
@@ -135,7 +136,7 @@ int write_num(int ind, char buffer[],
 	}
 	if (extra_c)
 		buffer[--ind] = extra_c;
-	return (write(1, &buffer[ind], length));
+return (write(1, &buffer[ind], length));
 }
 
 /**
@@ -183,17 +184,19 @@ int write_unsgnd(int is_negative, int ind,
 
 		buffer[i] = '\0';
 
-		if (flags & F_MINUS) /* Asign extra character to left of buffer [buffer>padd]*/
+		if(flags & F_MINUS)
+		/* Asign extra character to left of buffer [buffer>padd]*/
 		{
-			return (write(1, &buffer[ind], length) + write(1, &buffer[0], i));
+return (write(1, &buffer[ind], length) + write(1, &buffer[0], i));
 		}
-		else /* Asign extra character to left of padding [padd>buffer]*/
+		else
+			/* Asign extra character to left of padding [padd>buffer]*/
 		{
 			return (write(1, &buffer[0], i) + write(1, &buffer[ind], length));
 		}
 	}
 
-	return (write(1, &buffer[ind], length));
+return(write(1, &buffer[ind], length));
 }
 
 /**
@@ -205,7 +208,7 @@ int write_unsgnd(int is_negative, int ind,
  * @flags: Formatting flags
  * @padd: Padding character
  * @extra_c: Extra char
- * @padd_start: Padding start index  
+ * @padd_start: Padding start index
  *
  * Return: Number of chars printed
  */
