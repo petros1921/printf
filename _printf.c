@@ -4,6 +4,7 @@ void print_buffer(char buffer[], int *buff_ind);
 
 /**
  * _printf - Printf function Which pritns buff size
+ * By Petros and Kidus
  * @format: Format of the function which is going to be excuted
  * Return: For NULL Return(-1) for success return (printed_chars)
  */
@@ -54,6 +55,7 @@ int _printf(const char *format, ...)
 
 /**
  * print_buffer - This prints the contente of the function
+ * By Petros and Kidus
  * @buffer: Array of the characters
  * @buff_ind: Repredents the index and characters
  */
